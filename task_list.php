@@ -10,7 +10,9 @@
     </header>
 
     <main>
-        
+	<!-- print task list -->
+   	<p><?php print_r($task_list); ?></p>
+     
         <!-- part 1: the errors -->
         <?php if (count($errors) > 0) : ?>
         <h2>Errors:</h2>
@@ -44,7 +46,8 @@
             <input type="text" name="newtask" id="newtask"> <br>
             <label>&nbsp;</label>
             <input type="submit" name="action" value="Add Task">
-        </form>
+	
+	</form>
         <br>
 
         <!-- part 4: the modify/promote/delete form -->
